@@ -19,6 +19,7 @@ $router->post('/siswa', 'SiswaController@create');
 $router->get('/siswa', 'SiswaController@read');
 $router->post('/siswa/{id}', 'SiswaController@update');
 $router->delete('/siswa/{id}', 'SiswaController@delete');
+$router->get('/siswa/{id}', 'SiswaController@detail');
 
 $router->post('/kelas', 'KelasController@create');
 $router->get('/kelas', 'KelasController@read');

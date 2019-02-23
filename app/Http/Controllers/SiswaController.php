@@ -11,6 +11,23 @@ class SiswaController extends Controller
         return \App\Siswa::all();
     }
 
+    public function detail($id){
+        $siswa = \App\Siswa::find($id);
+
+        if(empty($siswa)){
+            return[
+                'status' => 'error',
+                'message' => 'Data tidak ditemukan',
+                'result' => null
+            ];    
+        }
+        return[
+            'status' => 'success',
+            'message' => '',
+            'result' => $siswa
+        ];
+    }
+
     public function read(Request $request){
         $result = \App\Siswa::all();
         return[
@@ -53,7 +70,7 @@ class SiswaController extends Controller
         }
     }
 
-    public function update(Request $request){
+    public function update(Request $request, $id){
         $validation = Validator::make($request->all(), [
             'nis' => 'required|max:20|unique:t_siswa',
             'nama_lengkap' => 'required|string',
@@ -92,7 +109,7 @@ class SiswaController extends Controller
         }   
     }
 
-    public function delete(Request $request){
+    public function delete(Request $request, $id){
         $siswa = \App\Siswa::find($id);
         if (empty($siswa)){
             return [

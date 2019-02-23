@@ -27,6 +27,14 @@ $app->withFacades();
 
 $app->withEloquent();
 
+$app->configure('cors');
+
+$app->register(Barryvdh\Cors\ServiceProvider::class);
+
+$app->middleware([
+	\Barryvdh\Cors\HandleCors::class,
+	]);
+
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings

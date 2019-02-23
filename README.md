@@ -1,7 +1,9 @@
 # APISekolahLaravelLumen
 Tugas 3
 
-Membuat API Sekolah dengan Laravel Lumen
+Membuat API Sekolah dengan Laravel Lumen. Disini adalah project untuk membuat api sekolah dengan laravel lumen.
+
+Diharapkan untuk membaca terlebih dahulu, terimakasih.
 
 Cara pemasangan :
 1. Download file lumen.rar
@@ -14,4 +16,5 @@ Cara pemasangan :
 8. Sekian
 
 oleh : Wahyu Wahyudin
-nis : 1617116768
+
+

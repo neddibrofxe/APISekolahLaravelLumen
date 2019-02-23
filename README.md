@@ -16,6 +16,7 @@ Cara pemasangan :
 -'http://localhost/projectname/public/siswa' (terkadang setiap orang berbeda)
 
 -'http://localhost/projectname/public/kelas' (terkadang setiap orang berbeda)
+
 7. Mungkin masih terdapat bug yang menempel, akibat terlalu banyak *****
 8. Sekian
 

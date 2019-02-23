@@ -6,7 +6,7 @@ Membuat API Sekolah dengan Laravel Lumen. Disini adalah project untuk membuat ap
 Diharapkan untuk membaca terlebih dahulu, terimakasih.
 
 Cara pemasangan :
-1. Download file lumen.rar
+1. Download/clone project
 2. Extract file kedalam file xampp/htdocs/
 3. Buat database api_sekolah jika belum ada
 4. buka cmd ke path file lumen tadi, ketikan "php artisan migrate" tanpa petik
